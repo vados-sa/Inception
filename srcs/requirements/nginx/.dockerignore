@@ -1,0 +1,3 @@
+# it's used to ignore files and folders that we don't want to be copied (COPY . .) into the container
+.env
+#other things.

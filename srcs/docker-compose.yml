@@ -1,0 +1,16 @@
+# tells all the containers how to work together to create the full application
+
+services:
+  nginx:
+    build: /nginx
+    ports:
+      - '80:80'
+  mariadb:
+    build: /mariadb
+    environment:
+      - name=value
+  wordpress:
+    build: /wordpress
+
+# to run: docker compose up
+# to shut down: docker compose down
